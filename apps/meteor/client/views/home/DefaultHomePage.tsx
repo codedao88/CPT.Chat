@@ -39,9 +39,6 @@ const DefaultHomePage = (): ReactElement => {
 						{canAddUsers && <AddUsersCard />}
 						{canCreateChannel && <CreateChannelsCard />}
 						<JoinRoomsCard />
-						<MobileAppsCard />
-						<DesktopAppsCard />
-						<DocumentationCard />
 						{(isAdmin || (isCustomContentVisible && !isCustomContentBodyEmpty)) && <CustomContentCard />}
 					</CardGroup>
 				</Box>

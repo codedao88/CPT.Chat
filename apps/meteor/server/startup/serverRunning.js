@@ -34,14 +34,14 @@ Meteor.startup(async () => {
 		const replicaSet = isRunningMs() ? 'Not required (running micro services)' : `${oplogEnabled ? 'Enabled' : 'Disabled'}`;
 
 		let msg = [
-			`Rocket.Chat Version: ${Info.version}`,
-			`     NodeJS Version: ${process.versions.node} - ${process.arch}`,
-			`    MongoDB Version: ${mongoVersion}`,
-			`     MongoDB Engine: ${mongoStorageEngine}`,
-			`           Platform: ${process.platform}`,
-			`       Process Port: ${process.env.PORT}`,
-			`           Site URL: ${settings.get('Site_Url')}`,
-			`   ReplicaSet OpLog: ${replicaSet}`,
+			`CPT.Chat Version: ${Info.version}`,
+			`  NodeJS Version: ${process.versions.node} - ${process.arch}`,
+			` MongoDB Version: ${mongoVersion}`,
+			`  MongoDB Engine: ${mongoStorageEngine}`,
+			`        Platform: ${process.platform}`,
+			`    Process Port: ${process.env.PORT}`,
+			`        Site URL: ${settings.get('Site_Url')}`,
+			`ReplicaSet OpLog: ${replicaSet}`,
 		];
 
 		if (Info.commit && Info.commit.hash) {
